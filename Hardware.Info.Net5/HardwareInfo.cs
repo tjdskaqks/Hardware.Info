@@ -124,7 +124,9 @@ namespace Hardware.Info.Net5
         #region Static
 
         private static bool _pingInProgress;
+#pragma warning disable CS8632 // nullable 참조 형식에 대한 주석은 코드에서 '#nullable' 주석 컨텍스트 내에만 사용되어야 합니다.
         private static Action<bool>? _onPingComplete;
+#pragma warning restore CS8632 // nullable 참조 형식에 대한 주석은 코드에서 '#nullable' 주석 컨텍스트 내에만 사용되어야 합니다.
 
         public static async Task<PingReply> PingAsync(string hostNameOrAddress, Action<bool> onPingComplete)
         {
