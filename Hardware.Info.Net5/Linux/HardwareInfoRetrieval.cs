@@ -355,7 +355,7 @@ namespace Hardware.Info.Net5.Linux
             // ... 
 
             string[] cpuUsageLineLast = TryReadFileLines("/proc/stat");
-            Task.Delay(500).Wait();
+            Task.Delay(200).Wait();
             string[] cpuUsageLineNow = TryReadFileLines("/proc/stat");
 
             if (cpuUsageLineLast.Length > 0 && cpuUsageLineNow.Length > 0)
@@ -801,7 +801,7 @@ namespace Hardware.Info.Net5.Linux
                 foreach (NetworkAdapter networkAdapter in networkAdapterList)
                 {
                     List<string>? networkAdapterUsageLast = (await TryReadFileLinesAsync("/proc/net/dev")).FirstOrDefault(l => l.Trim().StartsWith(networkAdapter.Name))?.Trim().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList();
-                    Task.Delay(1000).Wait();
+                    await Task.Delay(TimeSpan.FromSeconds(1));
                     List<string>? networkAdapterUsageNow = (await TryReadFileLinesAsync("/proc/net/dev")).FirstOrDefault(l => l.Trim().StartsWith(networkAdapter.Name))?.Trim().Split(charSeparators, StringSplitOptions.RemoveEmptyEntries).ToList();
 
                     if (networkAdapterUsageLast != null && networkAdapterUsageLast.Count > 0 && networkAdapterUsageNow != null && networkAdapterUsageNow.Count > 0)

@@ -510,6 +510,7 @@ namespace Hardware.Info.Net5.Windows
         }
         public async Task<List<Printer>> GetPrinterListAsync() => await Task.Run(GetPrinterList);
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:플랫폼 호환성 유효성 검사", Justification = "<보류 중>")]
         public List<SoundDevice> GetSoundDeviceList()
         {
             List<SoundDevice> soundDeviceList = new List<SoundDevice>();
@@ -573,7 +574,9 @@ namespace Hardware.Info.Net5.Windows
         }
         public async Task<List<VideoController>> GetVideoControllerListAsync() => await Task.Run(GetVideoControllerList);
 
+#pragma warning disable CS1998 // 이 비동기 메서드에는 'await' 연산자가 없으며 메서드가 동시에 실행됩니다.
         public async Task<List<LinuxVolume>> GetDriveList2Async()
+#pragma warning restore CS1998 // 이 비동기 메서드에는 'await' 연산자가 없으며 메서드가 동시에 실행됩니다.
         {
             List<LinuxVolume> linuxVolumes = new();
 
