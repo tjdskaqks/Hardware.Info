@@ -1,4 +1,4 @@
-﻿using Hardware.Info.Net5;
+﻿using Hardware.Info.Net6;
 using System;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
