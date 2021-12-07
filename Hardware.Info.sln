@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30104.148
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hardware.Info", "Hardware.Info\Hardware.Info.csproj", "{A3F91D8E-1DF9-471C-9BBE-99A76881A419}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hardware.Info.Test", "Hardw
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hardware.Info.Benchmark", "Hardware.Info.Benchmark\Hardware.Info.Benchmark.csproj", "{1E3DFEB6-2E9B-4BA3-B7FF-4AC79D62F014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hardware.Info.Net5", "Hardware.Info.Net5\Hardware.Info.Net5.csproj", "{B9CF3D67-F41B-4F0A-8FFC-A9072CE83343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hardware.Info.Net5", "Hardware.Info.Net5\Hardware.Info.Net5.csproj", "{B9CF3D67-F41B-4F0A-8FFC-A9072CE83343}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hardware.Info.Net6", "Hardware.Info.Net6\Hardware.Info.Net6.csproj", "{F9F3954C-8A87-443F-BC8B-22C1CA4CB773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B9CF3D67-F41B-4F0A-8FFC-A9072CE83343}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9CF3D67-F41B-4F0A-8FFC-A9072CE83343}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9CF3D67-F41B-4F0A-8FFC-A9072CE83343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F3954C-8A87-443F-BC8B-22C1CA4CB773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F3954C-8A87-443F-BC8B-22C1CA4CB773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F3954C-8A87-443F-BC8B-22C1CA4CB773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F3954C-8A87-443F-BC8B-22C1CA4CB773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
